@@ -1,0 +1,34 @@
+{
+    "name": "nterms/yii2-redactor-charts",
+    "description": "An asset bundle to use chart.js plugin for Imperavi Redactor",
+    "type": "yii2-extension",
+    "keywords": [
+        "nterms",
+        "yii",
+        "yii2",
+        "yii 2",
+        "extension",
+        "redactor",
+        "chartjs"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saranga Abeykoon",
+            "email": "amisaranga@gmail.com",
+            "homepage": "http://nterms.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "bower-asset/chartjs": "1.0.2",
+        "bower-asset/redactor-charts": "*",
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "nterms\\yii2-redactor-charts\\": ""
+        }
+    }
+}
