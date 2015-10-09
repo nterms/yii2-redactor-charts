@@ -38,7 +38,7 @@ Usage
 Register the asset bundle with your view. In case you register the asset bundle in your view file:
 
 ~~~php
-\nterms\yii2-redactor-charts\ChartsRedactorPluginAsset::register($this);
+\nterms\redactor\charts\ChartsRedactorPluginAsset::register($this);
 ~~~
 
 Now enable the `charts` plugin when you initialize Redactor. In JavaScript:

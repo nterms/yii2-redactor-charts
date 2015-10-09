@@ -6,7 +6,7 @@
  * @copyright Copyright (c) 2015 Saranga Abeykoon
  * @license MIT
  */
-namespace nterms\yii2-redactor-charts;
+namespace nterms\redactor\charts;
 
 use yii\web\AssetBundle;
 
