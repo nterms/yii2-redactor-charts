@@ -23,7 +23,7 @@
     "require": {
         "yiisoft/yii2": "*",
         "bower-asset/chartjs": "1.0.2",
-        "bower-asset/redactor-charts": "*",
+        "bower-asset/redactor-charts": "*"
     },
     "minimum-stability": "dev",
     "autoload": {
