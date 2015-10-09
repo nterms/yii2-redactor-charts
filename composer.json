@@ -28,7 +28,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "nterms\\yii2-redactor-charts\\": ""
+            "nterms\\redactor\\charts\\": ""
         }
     }
 }
