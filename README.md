@@ -57,8 +57,8 @@ $('#textarea').redactor({
 });
 ~~~
 
-Use with [asofter/yii2-imperavi-redactor](https://github.com/asofter/yii2-imperavi-redactor) - Tested
---------
+
+### Use with [asofter/yii2-imperavi-redactor](https://github.com/asofter/yii2-imperavi-redactor) - Tested
 
 Register the `ChartsRedactorPluginAsset` asset bundle as shown above and enable the plugin:
 
@@ -92,9 +92,7 @@ On your `web.php` add:
 This indicates that `ChartsRedactorPluginAsset` asset bundle depends on asset bundle of the widget, making it load assets in proper order.
 
 
-Use with [yiidoc/yii2-redactor](https://github.com/yiidoc/yii2-redactor) - Not tested
---------
-
+### Use with [yiidoc/yii2-redactor](https://github.com/yiidoc/yii2-redactor) - Not tested
 
 Register the `ChartsRedactorPluginAsset` asset bundle as shown above and enable the plugin:
 
@@ -125,9 +123,7 @@ On your `web.php` add:
 This indicates that `ChartsRedactorPluginAsset` asset bundle depends on asset bundle of the widget, making it load assets in proper order.
 
 
-Use with [vova07/yii2-imperavi-widget](https://github.com/vova07/yii2-imperavi-widget) - Not tested
---------
-
+### Use with [vova07/yii2-imperavi-widget](https://github.com/vova07/yii2-imperavi-widget) - Not tested
 
 Register the `ChartsRedactorPluginAsset` asset bundle as shown above and enable the plugin:
 
