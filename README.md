@@ -5,6 +5,7 @@ A Chart.js plugin for Imperavi Redactor WYSIWYG editor. This plugin
 enables creating and inserting Bar, Line and Radar type charts to the
 content edited with Redactor.
 
+[![Latest Stable Version](https://poser.pugx.org/nterms/yii2-redactor-charts/v/stable)](https://packagist.org/packages/nterms/yii2-redactor-charts) [![Total Downloads](https://poser.pugx.org/nterms/yii2-redactor-charts/downloads)](https://packagist.org/packages/nterms/yii2-redactor-charts) [![Latest Unstable Version](https://poser.pugx.org/nterms/yii2-redactor-charts/v/unstable)](https://packagist.org/packages/nterms/yii2-redactor-charts) [![License](https://poser.pugx.org/nterms/yii2-redactor-charts/license)](https://packagist.org/packages/nterms/yii2-redactor-charts)
 
 Prerequisites
 -------------
