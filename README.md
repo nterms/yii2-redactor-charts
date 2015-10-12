@@ -86,13 +86,16 @@ On your `web.php` add:
         'nterms\redactor\charts\ChartsRedactorPluginAsset' => [
             'depends' => [
                 'yii\imperavi\ImperaviRedactorAsset',
+                'nterms\redactor\charts\ChartjsAsset',
             ],
         ],
     ],
 ],
 ```
 
-This indicates that `ChartsRedactorPluginAsset` asset bundle depends on asset bundle of the widget, making it load assets in proper order.
+This indicates that `ChartsRedactorPluginAsset` asset bundle depends on
+asset bundle of the widget, making it load assets in proper order.
+Make sure you add `nterms\redactor\charts\ChartjsAsset` to the list as this overwrites the original list.
 
 
 ### Use with [yiidoc/yii2-redactor](https://github.com/yiidoc/yii2-redactor) - Not tested
@@ -117,13 +120,16 @@ On your `web.php` add:
         'nterms\redactor\charts\ChartsRedactorPluginAsset' => [
             'depends' => [
                 'yii\redactor\widgets\RedactorAsset',
+                'nterms\redactor\charts\ChartjsAsset',
             ],
         ],
     ],
 ],
 ```
 
-This indicates that `ChartsRedactorPluginAsset` asset bundle depends on asset bundle of the widget, making it load assets in proper order.
+This indicates that `ChartsRedactorPluginAsset` asset bundle depends on
+asset bundle of the widget, making it load assets in proper order.
+Make sure you add `nterms\redactor\charts\ChartjsAsset` to the list as this overwrites the original list.
 
 
 ### Use with [vova07/yii2-imperavi-widget](https://github.com/vova07/yii2-imperavi-widget) - Not tested
@@ -153,13 +159,16 @@ On your `web.php` add:
         'nterms\redactor\charts\ChartsRedactorPluginAsset' => [
             'depends' => [
                 'vova07\imperavi\Asset',
+                'nterms\redactor\charts\ChartjsAsset',
             ],
         ],
     ],
 ],
 ```
 
-This indicates that `ChartsRedactorPluginAsset` asset bundle depends on asset bundle of the widget, making it load assets in proper order.
+This indicates that `ChartsRedactorPluginAsset` asset bundle depends on
+asset bundle of the widget, making it load assets in proper order.
+Make sure you add `nterms\redactor\charts\ChartjsAsset` to the list as this overwrites the original list.
 
 
 Known Issues
