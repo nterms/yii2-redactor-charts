@@ -13,9 +13,9 @@ There are few yii2 extensions developed for integrating Redactor with your Yii2 
 This plugin does not depend on any specific extension. Theoretically it should work with all of those extensions.
 Here is a list of yii2-redactor extension I could find. Its up to your choice to use one suits for you.
 
-[asofter/yii2-imperavi-redactor](https://github.com/asofter/yii2-imperavi-redactor) - Tested
-[yiidoc/yii2-redactor](https://github.com/yiidoc/yii2-redactor)
-[vova07/yii2-imperavi-widget](https://github.com/vova07/yii2-imperavi-widget)
+- [asofter/yii2-imperavi-redactor](https://github.com/asofter/yii2-imperavi-redactor) - Tested
+- [yiidoc/yii2-redactor](https://github.com/yiidoc/yii2-redactor)
+- [vova07/yii2-imperavi-widget](https://github.com/vova07/yii2-imperavi-widget)
 
 Please find the usage instructions for each of the above extensions below under [Usage](#usage) section.
 
