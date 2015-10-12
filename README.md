@@ -1,7 +1,9 @@
 yii2-redactor-charts
 ====================
 
-An asset bunle to use chart.js plugin for Imperavi Redactor
+A Chart.js plugin for Imperavi Redactor WYSIWYG editor. This plugin
+enables creating and inserting Bar, Line and Radar type charts to the
+content edited with Redactor.
 
 
 Prerequisites
@@ -158,3 +160,20 @@ On your `web.php` add:
 
 This indicates that `ChartsRedactorPluginAsset` asset bundle depends on asset bundle of the widget, making it load assets in proper order.
 
+
+Known Issues
+------------
+
+This plugin is still at basic level and deliver only a limited set of
+features comes with Chart.js. And there are some missing UX features
+which I'm planing to develop soon. Here is list of known issues:
+
+- Does not support Pie and Doughnut graphs.
+- Generated charts are inserted into the Redactor in image format, hence once inserted charts cannot be edited.
+- Closing the modal box will clear the data entered so far.
+
+
+License
+-------
+
+[MIT](LICENSE)
