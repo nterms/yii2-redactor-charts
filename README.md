@@ -7,9 +7,17 @@ An asset bunle to use chart.js plugin for Imperavi Redactor
 Prerequisites
 -------------
 
-This plugin works only on Imperavi Redactor WYSIWYG editor. There are few yii2 extensions developed for integrating Redactor with your Yii2 project.
+This plugin works only on Imperavi Redactor WYSIWYG editor.
+You may use Redactor by directly loading `redactor.js` and `redactor.css` or useing some Yii2 extension.
+There are few yii2 extensions developed for integrating Redactor with your Yii2 project.
 This plugin does not depend on any specific extension. Theoretically it should work with all of those extensions.
 Here is a list of yii2-redactor extension I could find. Its up to your choice to use one suits for you.
+
+[asofter/yii2-imperavi-redactor](https://github.com/asofter/yii2-imperavi-redactor) - Tested
+[yiidoc/yii2-redactor](https://github.com/yiidoc/yii2-redactor)
+[vova07/yii2-imperavi-widget](https://github.com/vova07/yii2-imperavi-widget)
+
+Please find the usage instructions for each of the above extensions below under [Usage](#usage) section.
 
 
 Installation
@@ -32,7 +40,7 @@ or add
 to the require section of your `composer.json` file.
 
 
-Usage
+Usage <a name="usage"></a>
 -----
 
 Register the asset bundle with your view. In case you register the asset bundle in your view file:
@@ -48,3 +56,109 @@ $('#textarea').redactor({
     plugins: ['charts'],
 });
 ~~~
+
+Use with [asofter/yii2-imperavi-redactor](https://github.com/asofter/yii2-imperavi-redactor) - Tested
+--------
+
+Register the `ChartsRedactorPluginAsset` asset bundle as shown above and enable the plugin:
+
+```php
+yii\imperavi\Widget::widget([
+    'options' => [
+        'lang' => 'ru',
+    ],
+    'plugins' => [
+        'charts',
+    ]
+]);
+```
+
+In case the plugin is not loaded. Check the order of the JavaScript files loded on your page.
+You can simply set the `charts` plugin related asset files load after the widget assets by adding following to your application configuration.
+On your `web.php` add:
+
+```php
+'assetManager' => [
+    'bundles' => [
+        'nterms\redactor\charts\ChartsRedactorPluginAsset' => [
+            'depends' => [
+                'yii\imperavi\ImperaviRedactorAsset',
+            ],
+        ],
+    ],
+],
+```
+
+This indicates that `ChartsRedactorPluginAsset` asset bundle depends on asset bundle of the widget, making it load assets in proper order.
+
+
+Use with [yiidoc/yii2-redactor](https://github.com/yiidoc/yii2-redactor) - Not tested
+--------
+
+
+Register the `ChartsRedactorPluginAsset` asset bundle as shown above and enable the plugin:
+
+```php
+<?= \yii\redactor\widgets\Redactor::widget([
+    'model' => $model,
+    'attribute' => 'body',
+    'plugins' => ['charts'],
+]) ?>
+```
+
+In case the plugin is not loaded. Check the order of the JavaScript files loded on your page.
+You can simply set the `charts` plugin related asset files load after the widget assets by adding following to your application configuration.
+On your `web.php` add:
+
+```php
+'assetManager' => [
+    'bundles' => [
+        'nterms\redactor\charts\ChartsRedactorPluginAsset' => [
+            'depends' => [
+                'yii\redactor\widgets\RedactorAsset',
+            ],
+        ],
+    ],
+],
+```
+
+This indicates that `ChartsRedactorPluginAsset` asset bundle depends on asset bundle of the widget, making it load assets in proper order.
+
+
+Use with [vova07/yii2-imperavi-widget](https://github.com/vova07/yii2-imperavi-widget) - Not tested
+--------
+
+
+Register the `ChartsRedactorPluginAsset` asset bundle as shown above and enable the plugin:
+
+```php
+echo \vova07\imperavi\Widget::widget([
+    'selector' => '#my-textarea-id',
+    'settings' => [
+        'lang' => 'ru',
+        'minHeight' => 200,
+        'plugins' => [
+            'charts',
+        ]
+    ]
+]);
+```
+
+In case the plugin is not loaded. Check the order of the JavaScript files loded on your page.
+You can simply set the `charts` plugin related asset files load after the widget assets by adding following to your application configuration.
+On your `web.php` add:
+
+```php
+'assetManager' => [
+    'bundles' => [
+        'nterms\redactor\charts\ChartsRedactorPluginAsset' => [
+            'depends' => [
+                'vova07\imperavi\Asset',
+            ],
+        ],
+    ],
+],
+```
+
+This indicates that `ChartsRedactorPluginAsset` asset bundle depends on asset bundle of the widget, making it load assets in proper order.
+

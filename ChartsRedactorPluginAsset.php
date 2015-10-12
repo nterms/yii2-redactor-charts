@@ -14,7 +14,7 @@ class ChartsRedactorPluginAsset extends AssetBundle
 {
     public $sourcePath = '@bower/redactor-charts';
     public $depends = [
-        'nterms\yii2-redactor-charts\ChartjsAsset',
+        'nterms\redactor\charts\ChartjsAsset',
     ];
 
     public function init()
